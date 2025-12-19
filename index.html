@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>3D Flipbook Ebook</title>
+<link rel="stylesheet" href="styles.css" />
+<!-- Include PageFlip.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip/dist/PageFlip.css" />
+</head>
+<body>
+
+<!-- Homepage -->
+<div id="homepage" class="page">
+  <div class="cover-container">
+    <h1>My Ebook Cover</h1>
+    <button id="startBtn">Open Flipbook</button>
+  </div>
+</div>
+
+<!-- Flipbook Container -->
+<div id="flipbookContainer" class="page hidden">
+  <div class="toolbar">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+    <button id="zoomInBtn">Zoom In</button>
+    <button id="zoomOutBtn">Zoom Out</button>
+    <button id="fullscreenBtn">Fullscreen</button>
+    <button id="closeBtn">Close</button>
+  </div>
+  <div id="page-flip-container"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/PageFlip.global.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
